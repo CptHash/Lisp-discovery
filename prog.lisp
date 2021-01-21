@@ -1,6 +1,8 @@
-(defvar x 10)
+(defun ave (n1 n2 n3 n4)
+   (/ ( + n1 n2 n3 n4) 4)
+)
 
-(print x)
+(defvar x (ave 7 7 7 7))
 
-(write (+ 6 9 11))
-(write-line "Hello World")
+(write x)
+
