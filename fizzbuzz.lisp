@@ -1,0 +1,23 @@
+(defun check (value)
+  (if (and (/= (rem value 3) 0) (/= (rem value 5) 0))
+    (print value)
+    (format t "~%")
+  )
+  (if (= (rem value 3) 0)
+    (format t "Fizz")
+  )
+  (if (= (rem value 5) 0)
+    (format t "Buzz")
+  )
+)
+
+(setq i 1)
+(defun main (i)
+  (loop
+    (check i)
+    (setq i (+ i 1))
+    (when (> i 20) (return 0))
+  )
+)
+
+(main i)
